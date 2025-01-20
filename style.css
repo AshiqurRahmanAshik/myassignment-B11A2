@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* shared sytle start */
+.quicksand-black {
+  font-family: "Quicksand", serif;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+}
+.quicksand-white {
+  font-family: "Quicksand", serif;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+}
+.quicksand-orange {
+  font-family: "Quicksand", serif;
+  color: #fea301;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.quicksand-skyblue {
+  font-family: "Quicksand", serif;
+  color: #01acfd;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.quicksand-violate {
+  font-family: "Quicksand", serif;
+  color: #5d58ef;
+  font-weight: bold;
+  font-style: normal;
+}
+.quicksand-aqua {
+  font-family: "Quicksand", serif;
+  color: #05d4df;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.display-flex {
+  display: flex;
+}
+.common-btn {
+  background-color: #fea301;
+  border: none;
+  height: 50px;
+  width: 150px;
+  border-radius: 15px;
+}
+
+/* logo and navbar style start */
+.school-logo {
+  align-items: center;
+}
+.logo-nav {
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.fa-duotone,
+.fa-solid,
+.fa-bars {
+  padding: 10px;
+}
+.btn-menu {
+  align-items: center;
+  justify-items: center;
+}
+hr {
+  border: none;
+  border-top: 1.5px solid #fea301;
+}
+
+/* mobile responsive design */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .school,
+  .contact {
+    visibility: hidden;
+  }
+  .fa-duotone,
+  .fa-solid,
+  .fa-bars {
+    margin-bottom: 20px;
+  }
+  .btn-menu {
+    align-items: center;
+  }
+  .img-logo {
+    margin-bottom: 20px;
+  }
+}
+
+/* larger screen responsive design */
+@media screen and (min-width: 577px) {
+  fa-duotone,
+  .fa-solid,
+  .fa-bars {
+    visibility: hidden;
+  }
+  hr {
+    visibility: hidden;
+  }
+}
