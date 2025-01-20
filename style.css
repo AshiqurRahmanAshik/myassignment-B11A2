@@ -187,13 +187,11 @@ hr {
   background: linear-gradient(to top, #9981587c, #ffffff);
 }
 .primary-img {
-  background-color: white;
 }
 .secondary-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  background-color: white;
 }
 
 .story-btn-aqua {
@@ -246,7 +244,23 @@ hr {
   top: -25px;
   left: -25px;
 }
+.view-all {
+  margin: 50px 0px;
+}
+/* footer style start */
+.footer {
+  height: 40vh;
+  background-color: rgb(109, 109, 254);
+  justify-content: space-around;
+  padding: 60px;
+}
 
+ul {
+  list-style: none;
+}
+.footer-logo {
+  justify-content: space-around;
+}
 /* mobile responsive design */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -303,6 +317,14 @@ hr {
     justify-items: center;
     justify-content: center;
     text-align: center;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .footer-logo {
+    justify-content: start;
   }
 }
 
