@@ -64,6 +64,18 @@
   border-radius: 15px;
 }
 
+.cart-button-blue {
+  border: none;
+  color: blue;
+}
+.cart-button-yellow {
+  border: none;
+  color: rgb(255, 135, 16);
+}
+.cart-button-violate {
+  border: none;
+  color: violet;
+}
 /* logo and navbar style start */
 .school-logo {
   align-items: center;
@@ -83,6 +95,7 @@ a {
 .fa-bars {
   padding: 10px;
 }
+
 .btn-menu {
   align-items: center;
   justify-items: center;
@@ -94,10 +107,9 @@ hr {
 
 /* banner design start */
 .banner {
-  margin: 50px auto;
-  width: 80%;
   align-items: start;
   justify-content: space-between;
+  margin: 50px 100px;
 }
 .banner-title {
   font-size: 2rem;
@@ -106,11 +118,56 @@ hr {
 .banner-description {
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.69);
-  width: 35vw;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
+/* standard curricular start */
+.curriculum {
+  background-image: url(assets/bg.png);
+  margin: 50px 100px;
+  text-align: center;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+}
+
+.cart1 {
+  background: linear-gradient(to top, #ffff, #def5ff);
+}
+.cart2 {
+  background: linear-gradient(to top, #ffff, #fff4dc);
+}
+.cart3 {
+  background: linear-gradient(to top, #ffff, #f2e8ff);
+}
+.cart1,
+.cart2,
+.cart3 {
+  border-radius: 20px;
+}
+.cart-img {
+  margin: 50px 0;
+}
+.left-right-arrow {
+  display: flex;
+}
+
+.cart-description {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.69);
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.arrow {
+  height: 25px;
+  width: 25;
+}
 /* mobile responsive design */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -142,11 +199,20 @@ hr {
   .banner-title {
     text-align: center;
   }
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 50px;
+  }
+  .arrows {
+    visibility: hidden;
+  }
 }
 
 /* larger screen responsive design */
 @media screen and (min-width: 577px) {
-  fa-duotone,
+  .fa-duotone,
   .fa-solid,
   .fa-bars {
     visibility: hidden;
