@@ -49,11 +49,18 @@
 .display-flex {
   display: flex;
 }
-.common-btn {
+.common-btn-orange {
   background-color: #fea301;
   border: none;
-  height: 50px;
-  width: 150px;
+  height: 45px;
+  width: 160px;
+  border-radius: 15px;
+}
+.common-btn-black {
+  background-color: #000000;
+  border: none;
+  height: 45px;
+  width: 160px;
   border-radius: 15px;
 }
 
@@ -85,6 +92,25 @@ hr {
   border-top: 1.5px solid #fea301;
 }
 
+/* banner design start */
+.banner {
+  margin: 50px auto;
+  width: 80%;
+  align-items: start;
+  justify-content: space-between;
+}
+.banner-title {
+  font-size: 2rem;
+  margin-top: 100px;
+}
+.banner-description {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.69);
+  width: 35vw;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 /* mobile responsive design */
 @media screen and (max-width: 576px) {
   .navbar,
@@ -102,6 +128,19 @@ hr {
   }
   .img-logo {
     margin-bottom: 20px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .banner-text {
+    justify-items: center;
+  }
+  .banner-title {
+    text-align: center;
   }
 }
 
