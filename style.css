@@ -246,10 +246,14 @@ hr {
 }
 .view-all {
   margin: 50px 0px;
+  margin-left: -60px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 /* footer style start */
 .footer {
-  height: 40vh;
+  height: 45vh;
   background-color: rgb(109, 109, 254);
   justify-content: space-around;
   padding: 60px;
@@ -285,12 +289,24 @@ ul {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    text-align: center;
   }
   .banner-text {
     justify-items: center;
   }
   .banner-title {
     text-align: center;
+  }
+  .curriculum {
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .img-container {
+    display: flex;
+  }
+  .view-all {
+    margin: 50px auto;
   }
   .cart {
     display: grid;
@@ -311,17 +327,12 @@ ul {
     justify-items: center;
     justify-content: center;
   }
-  .our-stories {
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+
   .footer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    background-color: #5d58ef;
   }
   .footer-logo {
     justify-content: start;
