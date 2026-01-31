@@ -10,7 +10,7 @@ A modern, colorful, and fully responsive website designed for a children's educa
    git clone https://github.com/AshiqurRahmanAshik/Kids-School.git
 3. Open `index.html` in any modern web browser
 
-👁️ [View Live Project](https://ashiqurrahmanashik.github.io/myassignment-B11A2/)
+👁️ [View Live Project](https://ashiqurrahmanashik.github.io/Kids-School/)
 
 ## Project Glimpse
 
