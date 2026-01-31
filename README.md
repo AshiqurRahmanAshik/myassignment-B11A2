@@ -24,9 +24,10 @@ A modern, colorful, and fully responsive website designed for a children's educa
 
 
 
-### Our Stories
+### Footer Section
 
-<img width="1841" height="883" alt="image" src="https://github.com/user-attachments/assets/10fa1f5b-ca64-4686-9da2-67320a6cfdf7" />
+<img width="1335" height="282" alt="image" src="https://github.com/user-attachments/assets/37e0a025-f348-43c8-a91d-899c0994a473" />
+
 
 
 ---
