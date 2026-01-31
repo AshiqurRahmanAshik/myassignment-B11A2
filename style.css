@@ -1,447 +1,354 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
+/* =====================
+   RESET & GLOBAL
+===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* shared sytle start */
-.quicksand-black {
-  font-family: "Quicksand", serif;
-  color: black;
-  font-weight: bold;
-  font-style: normal;
-}
-.quicksand-white {
-  font-family: "Quicksand", serif;
-  color: white;
-  font-weight: bold;
-  font-style: normal;
-}
-.quicksand-orange {
-  font-family: "Quicksand", serif;
-  color: #fea301;
-  font-weight: 800;
-  font-style: normal;
-}
-.Empowering {
-  font-family: "Quicksand", serif;
-  color: #fea301;
-  font-size: 4rem;
-  font-weight: 800;
-  font-style: normal;
-}
-.students,
-.age {
-  font-family: "Quicksand", serif;
-  color: black;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 3rem;
-}
-.vision {
-  font-family: "Quicksand", serif;
-  color: #01acfd;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 3rem;
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
 }
 
-.quicksand-skyblue {
-  font-family: "Quicksand", serif;
-  color: #01acfd;
-  font-weight: bold;
-  font-style: normal;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.quicksand-violate {
-  font-family: "Quicksand", serif;
-  color: #5d58ef;
-  font-weight: bold;
-  font-style: normal;
-}
-.quicksand-aqua {
-  font-family: "Quicksand", serif;
-  color: #05d4df;
-  font-weight: bold;
-  font-style: normal;
+a {
+  text-decoration: none;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* =====================
+   SHARED STYLES
+===================== */
 .display-flex {
   display: flex;
 }
-.common-btn-orange {
-  background-color: #fea301;
-  border: none;
-  height: 45px;
-  width: 160px;
-  border-radius: 15px;
-}
-.common-btn-black {
-  background-color: #000000;
-  border: none;
-  height: 45px;
-  width: 160px;
-  border-radius: 15px;
-  margin-left: 0 auto;
-}
 
-.cart-button-blue {
-  border: none;
-  color: blue;
-}
-.cart-button-yellow {
-  border: none;
-  color: rgb(255, 135, 16);
-}
-.cart-button-violate {
-  border: none;
-  color: violet;
-}
-/* logo and navbar style start */
-.school-logo {
-  align-items: center;
-}
-.logo-nav {
-  margin-top: 20px;
-  justify-content: space-around;
-  align-items: center;
-}
-a {
-  text-decoration: none;
-  margin: 0 1rem;
-}
-
-.fa-duotone,
-.fa-solid,
-.fa-bars {
-  padding: 10px;
-}
-
-.btn-menu {
-  align-items: center;
-  justify-items: center;
-}
-hr {
-  border: none;
-  border-top: 1.5px solid #fea301;
-}
 .border-radius {
   border-radius: 10px;
 }
-marquee {
-  font-family: "Quicksand", serif;
-  font-weight: bold;
-  font-style: normal;
-  color: red;
-}
-/* banner design start */
-.banner {
-  align-items: start;
-  justify-content: space-between;
-  margin: 50px 100px;
-}
-.banner-text {
-  align-items: center;
-  margin-left: 100px;
-  width: 50%;
-}
-.banner-title {
-  font-size: 2rem;
-  margin-top: 100px;
-  width: 80%;
-}
-.banner-description {
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.69);
-  width: 80%;
-  margin-top: 10px;
-  margin-bottom: 30px;
+
+.quicksand-black {
+  color: #000;
+  font-weight: 700;
 }
 
-/* standard curricular start */
+.quicksand-white {
+  color: #fff;
+  font-weight: 700;
+}
+
+.quicksand-orange {
+  color: #fea301;
+  font-weight: 700;
+}
+
+.quicksand-skyblue {
+  color: #01acfd;
+  font-weight: 700;
+}
+
+.quicksand-violate {
+  color: #5d58ef;
+  font-weight: 700;
+}
+
+.quicksand-aqua {
+  color: #05d4df;
+  font-weight: 700;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.common-btn-orange {
+  background: #fea301;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.common-btn-black {
+  background: #000;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* =====================
+   HEADER
+===================== */
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.school-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar a {
+  margin: 0 1rem;
+}
+
+.btn-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #fea301;
+}
+
+marquee {
+  font-weight: bold;
+  color: red;
+  padding: 0.5rem 0;
+}
+
+/* =====================
+   BANNER
+===================== */
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 1rem;
+}
+
+.banner-text {
+  max-width: 520px;
+}
+
+.Empowering {
+  font-size: 3.5rem;
+  color: #fea301;
+}
+
+.students {
+  font-size: 2.8rem;
+}
+
+.vision {
+  font-size: 2.8rem;
+  color: #01acfd;
+}
+
+.banner-description {
+  margin: 1rem 0 2rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* =====================
+   CURRICULUM
+===================== */
 .curriculum {
-  background-image: url(assets/bg.png);
-  margin: 50px 100px;
+  background: url(assets/bg.png);
   text-align: center;
+  padding: 4rem 1rem;
 }
 
 .cart {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-  padding: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.cart1 {
-  background: linear-gradient(to top, #ffff, #def5ff);
-}
-.cart2 {
-  background: linear-gradient(to top, #ffff, #fff4dc);
-}
-.cart3 {
-  background: linear-gradient(to top, #ffff, #f2e8ff);
-}
 .cart1,
 .cart2,
 .cart3 {
+  padding: 2rem;
   border-radius: 20px;
 }
-.cart-img {
-  margin: 50px 0;
+
+.cart1 {
+  background: linear-gradient(to top, #fff, #def5ff);
 }
-.left-right-arrow {
-  display: flex;
+.cart2 {
+  background: linear-gradient(to top, #fff, #fff4dc);
+}
+.cart3 {
+  background: linear-gradient(to top, #fff, #f2e8ff);
 }
 
 .cart-description {
-  font-size: 1rem;
-  color: rgba(0, 0, 0, 0.69);
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-.arrow {
-  height: 25px;
-  width: 25;
+  margin: 1rem 0 1.5rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-/* our stories design start */
+.cart-button-blue,
+.cart-button-yellow,
+.cart-button-violate {
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart-button-blue {
+  color: blue;
+}
+.cart-button-yellow {
+  color: orange;
+}
+.cart-button-violate {
+  color: violet;
+}
+
+/* =====================
+   OUR STORIES
+===================== */
 .our-stories {
+  background: url(assets/bg.png);
+  padding: 4rem 1rem;
   text-align: center;
-  margin-top: 100px;
-  background-image: url(assets/bg.png);
 }
 
 .img-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin-top: 50px;
-  padding: 0 100px;
-  background-image: url(assets/bg.png);
-  background: linear-gradient(to top, #9981587c, #ffffff);
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
-.primary-img,
-.img-description {
-  justify-items: center;
-  text-align: center;
-}
-.secondary-img {
-  border-radius: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  background-image: url(assets/bg.png);
-}
 .primary-img {
-  background-color: white;
+  background: #fff;
+  padding: 1rem;
   border-radius: 20px;
+  position: relative;
 }
+
+.secondary-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
 .img2,
 .img3,
 .img4,
 .img5 {
-  size-adjust: auto;
-  background-color: white;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 15px;
 }
 
-.story-btn-aqua {
-  background-color: aqua;
-  border: none;
-  height: 45px;
-  width: 150px;
-  border-radius: 15px;
-  position: relative;
-  top: -25px;
-  left: -25px;
-}
-.story-btn-green {
-  background-color: green;
-  border: none;
-  height: 45px;
-  width: 150px;
-  border-radius: 15px;
-  position: relative;
-  top: -25px;
-  left: -25px;
-}
-.story-btn-violate {
-  background-color: violet;
-  border: none;
-  height: 45px;
-  width: 150px;
-  border-radius: 15px;
-  position: relative;
-  top: -25px;
-  left: -25px;
-}
-.story-btn-orange {
-  background-color: #fea301;
-  border: none;
-  height: 45px;
-  width: 150px;
-  border-radius: 15px;
-  position: relative;
-  left: -450px;
-}
+.story-btn-orange,
+.story-btn-green,
+.story-btn-aqua,
+.story-btn-violate,
 .story-btn-darkslategrey {
-  background-color: darkslategray;
   border: none;
-  height: 45px;
-  width: 150px;
+  padding: 8px 20px;
   border-radius: 15px;
-  position: relative;
-  top: -25px;
-  left: -25px;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
+
+.story-btn-orange { background: #fea301; }
+.story-btn-green { background: green; }
+.story-btn-aqua { background: aqua; color: #000; }
+.story-btn-violate { background: violet; }
+.story-btn-darkslategrey { background: darkslategray; }
+
+/* =====================
+   VIEW ALL
+===================== */
 .view-all {
-  background: linear-gradient(to bottom, #9981587c, #ffffff);
   text-align: center;
-  margin-bottom: 20px;
+  padding: 2rem 0;
 }
-/* footer style start */
+
+/* =====================
+   FOOTER
+===================== */
 .footer {
-  height: 45vh;
-  background-color: rgb(109, 109, 254);
-  justify-content: space-around;
+  background: #6d6dfe;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  gap: 1rem;
 }
 
 ul {
   list-style: none;
 }
-ul > li {
-  margin: 10px;
-}
-.footer-logo {
-  justify-content: space-around;
-}
-.kid-education,
-.about-school,
-.keep-in-touch {
-  margin-top: 50px;
+
+ul li {
+  margin: 0.5rem 0;
 }
 
-/* mobile responsive design */
-@media screen and (max-width: 576px) {
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+@media (max-width: 768px) {
   .navbar,
-  .school,
-  .contact {
-    visibility: hidden;
+  .contact,
+  .school {
+    display: none;
   }
-  .fa-duotone,
-  .fa-solid,
-  .fa-bars {
-    margin-bottom: 20px;
-  }
-  .banner-text {
-    justify-content: center;
-    align-items: center;
 
-    width: 100%;
-  }
-  .Empowering {
-    font-family: "Quicksand", serif;
-    color: #fea301;
-    font-size: 3rem;
-    font-weight: 800;
-    font-style: normal;
-    margin-bottom: 10px;
-  }
-  .students {
-    font-size: 2rem;
-    text-align: left;
-  }
-  .vision {
-    font-size: 2.5rem;
-  }
-  .enroll {
-    background-color: #000000;
-    border: none;
-    height: 45px;
-    width: 160px;
-    border-radius: 15px;
-    margin-left: 50px;
-  }
-  .btn-menu {
-    align-items: center;
-  }
-  .img-logo {
-    margin-bottom: 20px;
-  }
   .banner {
-    display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-  }
-  .banner-text {
-    align-items: center;
-    justify-content: center;
-  }
-  .story {
-    position: relative;
-    left: -20px;
-  }
-  .curriculum {
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-  }
-  .img-container {
-    display: flex;
-  }
-  .view-all {
-    justify-content: center;
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    left: -20px;
   }
-  .cart {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    padding: 50px;
+
+  .Empowering {
+    font-size: 2.8rem;
   }
-  .arrows {
-    visibility: hidden;
+
+  .students,
+  .vision {
+    font-size: 2rem;
   }
+
+  .img-container {
+    grid-template-columns: 1fr;
+  }
+
   .primary-img {
     display: none;
   }
-  .secondary-img {
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    justify-content: center;
-  }
 
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 10px;
-    background-color: #5d58ef;
-  }
-  .footer-logo {
-    justify-content: start;
-  }
-  .kid-education,
-  .about-school,
-  .keep-in-touch {
-    margin-top: 0;
+  .secondary-img {
+    grid-template-columns: 1fr;
   }
 }
 
-/* larger screen responsive design */
-@media screen and (min-width: 577px) {
-  .fa-duotone,
-  .fa-solid,
+/* =====================
+   LARGE SCREEN FIX
+===================== */
+@media (min-width: 769px) {
   .fa-bars {
-    visibility: hidden;
-  }
-  hr {
-    visibility: hidden;
+    display: none;
   }
 }
