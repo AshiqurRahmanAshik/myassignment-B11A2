@@ -37,7 +37,6 @@ A modern, colorful, and fully responsive website designed for a children's educa
 - Styling & Theming
 - Cards & Component Design
 - Interactivity with CSS
-- Forms
 - Mobile & Responsive Awareness
 
 ---
