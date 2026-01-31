@@ -1,354 +1,613 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-/* =====================
-   RESET & GLOBAL
-===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Quicksand", sans-serif;
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* =====================
-   SHARED STYLES
-===================== */
-.display-flex {
-  display: flex;
-}
-
-.border-radius {
-  border-radius: 10px;
-}
-
+/* shared style start */
 .quicksand-black {
-  color: #000;
-  font-weight: 700;
+  font-family: "Quicksand", serif;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
 }
-
 .quicksand-white {
-  color: #fff;
-  font-weight: 700;
+  font-family: "Quicksand", serif;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
 }
-
 .quicksand-orange {
+  font-family: "Quicksand", serif;
   color: #fea301;
-  font-weight: 700;
+  font-weight: 800;
+  font-style: normal;
+}
+.Empowering {
+  font-family: "Quicksand", serif;
+  color: #fea301;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  font-style: normal;
+}
+.students,
+.age {
+  font-family: "Quicksand", serif;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+.vision {
+  font-family: "Quicksand", serif;
+  color: #01acfd;
+  font-weight: bold;
+  font-style: normal;
+  font-size: clamp(1.5rem, 4vw, 3rem);
 }
 
 .quicksand-skyblue {
+  font-family: "Quicksand", serif;
   color: #01acfd;
-  font-weight: 700;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .quicksand-violate {
+  font-family: "Quicksand", serif;
   color: #5d58ef;
-  font-weight: 700;
-}
-
-.quicksand-aqua {
-  color: #05d4df;
-  font-weight: 700;
-}
-
-/* =====================
-   BUTTONS
-===================== */
-.common-btn-orange {
-  background: #fea301;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-.common-btn-black {
-  background: #000;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 15px;
-  cursor: pointer;
-}
-
-/* =====================
-   HEADER
-===================== */
-.logo-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1rem;
-}
-
-.school-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.navbar a {
-  margin: 0 1rem;
-}
-
-.btn-menu {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-hr {
-  border: none;
-  border-top: 2px solid #fea301;
-}
-
-marquee {
   font-weight: bold;
-  color: red;
-  padding: 0.5rem 0;
+  font-style: normal;
+}
+.quicksand-aqua {
+  font-family: "Quicksand", serif;
+  color: #05d4df;
+  font-weight: bold;
+  font-style: normal;
 }
 
-/* =====================
-   BANNER
-===================== */
-.banner {
+.display-flex {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  padding: 4rem 1rem;
 }
-
-.banner-text {
-  max-width: 520px;
+.common-btn-orange {
+  background-color: #fea301;
+  border: none;
+  height: 45px;
+  width: 160px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-.Empowering {
-  font-size: 3.5rem;
-  color: #fea301;
+.common-btn-orange:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
-
-.students {
-  font-size: 2.8rem;
+.common-btn-black {
+  background-color: #000000;
+  border: none;
+  height: 45px;
+  width: 160px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-.vision {
-  font-size: 2.8rem;
-  color: #01acfd;
-}
-
-.banner-description {
-  margin: 1rem 0 2rem;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-/* =====================
-   CURRICULUM
-===================== */
-.curriculum {
-  background: url(assets/bg.png);
-  text-align: center;
-  padding: 4rem 1rem;
-}
-
-.cart {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.cart1,
-.cart2,
-.cart3 {
-  padding: 2rem;
-  border-radius: 20px;
-}
-
-.cart1 {
-  background: linear-gradient(to top, #fff, #def5ff);
-}
-.cart2 {
-  background: linear-gradient(to top, #fff, #fff4dc);
-}
-.cart3 {
-  background: linear-gradient(to top, #fff, #f2e8ff);
-}
-
-.cart-description {
-  margin: 1rem 0 1.5rem;
-  color: rgba(0, 0, 0, 0.7);
+.common-btn-black:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .cart-button-blue,
 .cart-button-yellow,
 .cart-button-violate {
   border: none;
-  background: none;
-  font-weight: bold;
+  background: transparent;
+  padding: 10px 20px;
   cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
-
 .cart-button-blue {
   color: blue;
 }
 .cart-button-yellow {
-  color: orange;
+  color: rgb(255, 135, 16);
 }
 .cart-button-violate {
   color: violet;
 }
+.cart-button-blue:hover,
+.cart-button-yellow:hover,
+.cart-button-violate:hover {
+  text-decoration: underline;
+}
 
-/* =====================
-   OUR STORIES
-===================== */
-.our-stories {
-  background: url(assets/bg.png);
-  padding: 4rem 1rem;
+/* logo and navbar style start */
+.school-logo {
+  align-items: center;
+  gap: 10px;
+}
+.logo-nav {
+  margin-top: 20px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navbar {
+  display: flex;
+  gap: 10px;
+}
+a {
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  transition: opacity 0.3s ease;
+}
+a:hover {
+  opacity: 0.7;
+}
+
+.fa-duotone,
+.fa-solid,
+.fa-bars {
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.btn-menu {
+  align-items: center;
+  gap: 10px;
+}
+hr {
+  border: none;
+  border-top: 1.5px solid #fea301;
+  display: none;
+}
+.border-radius {
+  border-radius: 10px;
+}
+marquee {
+  font-family: "Quicksand", serif;
+  font-weight: bold;
+  font-style: normal;
+  color: red;
+  padding: 10px 0;
+}
+
+/* banner design start */
+.banner {
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 20px;
+  padding: 0 20px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.banner-text {
+  flex: 1;
+  min-width: 300px;
+}
+.banner-img {
+  flex: 1;
+  min-width: 300px;
   text-align: center;
+}
+.banner-img img {
+  max-width: 100%;
+  height: auto;
+}
+.banner-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.banner-description {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: rgba(0, 0, 0, 0.69);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* standard curricular start */
+.curriculum {
+  background-image: url(assets/bg.png);
+  margin: 50px 20px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.curriculam-title h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 30px;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+.cart1,
+.cart2,
+.cart3 {
+  border-radius: 20px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cart1 {
+  background: linear-gradient(to top, #ffff, #def5ff);
+}
+.cart2 {
+  background: linear-gradient(to top, #ffff, #fff4dc);
+}
+.cart3 {
+  background: linear-gradient(to top, #ffff, #f2e8ff);
+}
+.cart1:hover,
+.cart2:hover,
+.cart3:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.cart-img {
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+}
+.cart-title {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  margin-bottom: 15px;
+}
+.cart-description {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  color: rgba(0, 0, 0, 0.69);
+  margin: 15px 0 20px;
+  line-height: 1.6;
+}
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.arrow {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+/* our stories design start */
+.our-stories {
+  text-align: center;
+  margin-top: 100px;
+  padding: 40px 20px;
+  background-image: url(assets/bg.png);
+}
+.our-stories-text {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 40px;
 }
 
 .img-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+  padding: 40px 20px;
+  background: linear-gradient(to top, #9981587c, #ffffff);
 }
 
 .primary-img {
-  background: #fff;
-  padding: 1rem;
+  background-color: white;
   border-radius: 20px;
+  padding: 20px;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.primary-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.primary-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 .secondary-img {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  background-image: url(assets/bg.png);
 }
-
 .img2,
 .img3,
 .img4,
 .img5 {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 15px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
-.story-btn-orange,
-.story-btn-green,
+.img-title {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin: 15px 0;
+  padding: 0 10px;
+}
+
 .story-btn-aqua,
+.story-btn-green,
 .story-btn-violate,
+.story-btn-orange,
 .story-btn-darkslategrey {
   border: none;
-  padding: 8px 20px;
+  height: 40px;
+  padding: 0 20px;
   border-radius: 15px;
-  color: #fff;
-  position: absolute;
-  top: 15px;
-  left: 15px;
+  position: relative;
+  margin: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.story-btn-aqua {
+  background-color: aqua;
+}
+.story-btn-green {
+  background-color: green;
+  color: white;
+}
+.story-btn-violate {
+  background-color: violet;
+}
+.story-btn-orange {
+  background-color: #fea301;
+}
+.story-btn-darkslategrey {
+  background-color: darkslategray;
+  color: white;
+}
+.story-btn-aqua:hover,
+.story-btn-green:hover,
+.story-btn-violate:hover,
+.story-btn-orange:hover,
+.story-btn-darkslategrey:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
-.story-btn-orange { background: #fea301; }
-.story-btn-green { background: green; }
-.story-btn-aqua { background: aqua; color: #000; }
-.story-btn-violate { background: violet; }
-.story-btn-darkslategrey { background: darkslategray; }
-
-/* =====================
-   VIEW ALL
-===================== */
 .view-all {
+  background: linear-gradient(to bottom, #9981587c, #ffffff);
   text-align: center;
-  padding: 2rem 0;
+  padding: 40px 20px;
 }
 
-/* =====================
-   FOOTER
-===================== */
+/* footer style start */
 .footer {
-  background: #6d6dfe;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  padding: 3rem 1rem;
+  min-height: 45vh;
+  background-color: rgb(109, 109, 254);
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px 20px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-
-.footer-logo {
+.kid-education,
+.about-school,
+.keep-in-touch {
+  flex: 1;
+  min-width: 250px;
+}
+.kid-education {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 15px;
+}
+.kid-education img {
+  max-width: 60px;
+  height: auto;
+}
+.kid-education h1 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+.kid-education p {
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.6;
 }
 
 ul {
   list-style: none;
 }
-
-ul li {
-  margin: 0.5rem 0;
+ul > li {
+  margin: 10px 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+ul > li:hover {
+  opacity: 0.7;
+}
+.footer-logo {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+.footer-logo img {
+  max-width: 40px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.footer-logo img:hover {
+  transform: scale(1.1);
 }
 
-/* =====================
-   MOBILE RESPONSIVE
-===================== */
-@media (max-width: 768px) {
-  .navbar,
-  .contact,
+/* Tablet responsive design */
+@media screen and (max-width: 992px) {
+  .logo-nav {
+    padding: 0 15px;
+  }
+  .banner {
+    margin: 30px 15px;
+    padding: 0 15px;
+  }
+  .curriculum {
+    margin: 30px 15px;
+  }
+  .img-container {
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
   .school {
     display: none;
   }
-
-  .banner {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .Empowering {
-    font-size: 2.8rem;
-  }
-
-  .students,
-  .vision {
-    font-size: 2rem;
-  }
-
-  .img-container {
-    grid-template-columns: 1fr;
-  }
-
-  .primary-img {
+  .contact {
     display: none;
   }
-
-  .secondary-img {
+  .fa-duotone,
+  .fa-solid,
+  .fa-bars {
+    display: block;
+  }
+  hr {
+    display: block;
+  }
+  
+  .logo-nav {
+    padding: 0 10px;
+  }
+  
+  .banner {
+    flex-direction: column-reverse;
+    margin: 20px 10px;
+    padding: 0 10px;
+    text-align: center;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  
+  .cart {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  
+  .arrows {
+    display: none;
+  }
+  
+  .img-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 10px;
+  }
+  
+  .primary-img {
+    order: 2;
+  }
+  
+  .secondary-img {
+    order: 1;
+    grid-template-columns: 1fr;
+  }
+  
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .kid-education,
+  .about-school,
+  .keep-in-touch {
+    width: 100%;
+    align-items: center;
+  }
+  .footer-logo {
+    justify-content: center;
   }
 }
 
-/* =====================
-   LARGE SCREEN FIX
-===================== */
-@media (min-width: 769px) {
-  .fa-bars {
-    display: none;
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .logo-nav {
+    margin-top: 10px;
+  }
+  .school-logo {
+    gap: 5px;
+  }
+  .img-logo {
+    max-width: 40px;
+  }
+  .banner {
+    margin: 15px 5px;
+  }
+  .curriculum {
+    margin: 20px 5px;
+    padding: 20px 10px;
+  }
+  .cart {
+    padding: 15px 5px;
+  }
+  .our-stories {
+    margin-top: 50px;
+    padding: 20px 10px;
+  }
+  .img-container {
+    padding: 15px 5px;
+  }
+  .view-all {
+    padding: 20px 10px;
+  }
+  .footer {
+    padding: 20px 10px;
+  }
+}
+
+/* Large screens */
+@media screen and (min-width: 1200px) {
+  .banner {
+    margin: 50px 100px;
+    padding: 0 50px;
+  }
+  .curriculum {
+    margin: 50px 100px;
+  }
+  .cart {
+    padding: 50px;
+  }
+  .img-container {
+    padding: 40px 100px;
   }
 }
